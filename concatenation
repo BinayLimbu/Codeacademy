@@ -3,6 +3,7 @@ string_2 = "place"
 
 print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
 
+
 name = "Alex"
 quest = "Teaching Python"
 color = "Blue"
@@ -11,3 +12,14 @@ print "Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color)
 
 # %s highlights points where % () values will be inserted in order
+
+
+from datetime import datetime
+now = datetime.now()
+
+print '%02d/%02d/%04d' % (now.month, now.day, now.year)
+print '%02d:%02d:%02d' % (now.hour, now.minute, now.second)
+
+# % 0xd (x designates number of place values)
+
+
